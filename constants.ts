@@ -1,7 +1,8 @@
 export const Mathematics: string = "Mathematics";
 export const Hebrew: string = "Hebrew";
 export const Geography: string = "Geography";
-// const History: string = "History";
+// Tasks 2 and 3: The row with History constant was commented + export was missing
+export const History: string = "History";
 export const Chemistry: string = "Chemistry";
 export const Physics: string = "Physics";
 
@@ -20,4 +21,13 @@ export const lastNames: string[] = [
     "Sidorov",
     "Kukushkin",
     "Fyodorov"
+];
+
+export const specialities: string[] = [
+    Mathematics,
+    Hebrew,
+    Geography,
+    History,
+    Chemistry,
+    Physics
 ];
