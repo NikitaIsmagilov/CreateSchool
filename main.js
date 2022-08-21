@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+var services_1 = require("./services");
+var school = (0, services_1.initializeSchool)();
+var newSchool = (0, services_1.initializeDynamicSchool)();
+console.log('PRINT USUAL SCHOOL');
+(0, services_1.printSchool)(school);
+(0, services_1.transferStudent)(school.classes[0].students[1].fullName(), school.classes[0], school.classes[1]);
+console.log('PRINT WITH TRANSFERRED STUDENT');
+(0, services_1.printSchool)(school);
+console.log((0, services_1.getClassYoungestStudent)(school.classes[0]) + ' is the youngest student');
+console.log('PRINT DYNAMIC SCHOOL');
+(0, services_1.printSchool)(newSchool);
+(0, services_1.transferStudent)(newSchool.classes[0].students[0].fullName(), newSchool.classes[0], newSchool.classes[1]);
+console.log('PRINT WITH TRANSFERRED STUDENT');
+(0, services_1.printSchool)(newSchool);
+console.log((0, services_1.getClassYoungestStudent)(newSchool.classes[0]) + ' is the youngest student');
